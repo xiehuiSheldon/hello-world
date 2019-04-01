@@ -1,0 +1,594 @@
+2019-03-30 22:16:03 [scrapy.utils.log] INFO: Scrapy 1.5.2 started (bot: wenshu)
+2019-03-30 22:16:03 [scrapy.utils.log] INFO: Versions: lxml 3.7.2.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 11:27:44) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.5, Platform Windows-10-10.0.17763-SP0
+2019-03-30 22:16:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'wenshu', 'DOWNLOAD_DELAY': 5, 'LOG_FILE': 'log_files/log2019-03-30_22_16.txt', 'NEWSPIDER_MODULE': 'wenshu.spiders', 'RETRY_TIMES': 4, 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['wenshu.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'}
+2019-03-30 22:16:03 [scrapy.extensions.telnet] INFO: Telnet Password: 4466267aea50093f
+2019-03-30 22:16:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-30 22:16:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['wenshu.middlewares.MyHttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'wenshu.middlewares.DedupDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'wenshu.middlewares.MyRetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-30 22:16:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-30 22:16:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['wenshu.pipelines.MySQLAsyncPipeline']
+2019-03-30 22:16:03 [scrapy.core.engine] INFO: Spider opened
+2019-03-30 22:16:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-30 22:16:03 [court_tree_content] INFO: Spider opened: court_tree_content
+2019-03-30 22:16:03 [court_tree_content] INFO: Spider opened: court_tree_content
+2019-03-30 22:16:03 [court_tree_content] INFO: Spider opened: court_tree_content
+2019-03-30 22:16:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-30 22:16:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wenshu.court.gov.cn/robots.txt> (referer: None)
+2019-03-30 22:16:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/TreeContent> (referer: None)
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '最高人民法院', 'court_area_value': '0'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '北京市', 'court_area_value': '104805'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '天津市', 'court_area_value': '127996'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '河北省', 'court_area_value': '304310'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '山西省', 'court_area_value': '167449'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '内蒙古自治区', 'court_area_value': '147515'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '辽宁省', 'court_area_value': '218298'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '吉林省', 'court_area_value': '241115'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '黑龙江省', 'court_area_value': '176882'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '上海市', 'court_area_value': '172063'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '江苏省', 'court_area_value': '483234'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '浙江省', 'court_area_value': '638919'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '安徽省', 'court_area_value': '315494'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '福建省', 'court_area_value': '346017'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '江西省', 'court_area_value': '188914'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '山东省', 'court_area_value': '456921'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '河南省', 'court_area_value': '529558'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '湖北省', 'court_area_value': '269537'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '湖南省', 'court_area_value': '356550'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '广东省', 'court_area_value': '613925'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '广西壮族自治区', 'court_area_value': '259994'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '海南省', 'court_area_value': '50634'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '重庆市', 'court_area_value': '196859'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '四川省', 'court_area_value': '388176'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '贵州省', 'court_area_value': '182804'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '云南省', 'court_area_value': '339102'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '西藏自治区', 'court_area_value': '9938'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '陕西省', 'court_area_value': '197581'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '甘肃省', 'court_area_value': '122113'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '青海省', 'court_area_value': '42794'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '宁夏回族自治区', 'court_area_value': '44874'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1, 'court_area': '新疆维吾尔自治区', 'court_area_value': '60431'}
+2019-03-30 22:16:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 1,
+ 'court_area': '新疆维吾尔自治区高级人民法院生产建设兵团分院',
+ 'court_area_value': '35255'}
+2019-03-30 22:16:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/TreeContent> (referer: None)
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '最高人民法院', 'court_area_value': '0'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '北京市', 'court_area_value': '1462942'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '天津市', 'court_area_value': '778815'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '河北省', 'court_area_value': '1949178'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '山西省', 'court_area_value': '706131'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '内蒙古自治区', 'court_area_value': '983844'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '辽宁省', 'court_area_value': '1419290'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '吉林省', 'court_area_value': '1290134'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '黑龙江省', 'court_area_value': '955569'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '上海市', 'court_area_value': '1671652'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '江苏省', 'court_area_value': '2704776'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '浙江省', 'court_area_value': '3393829'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '安徽省', 'court_area_value': '2059148'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '福建省', 'court_area_value': '1475211'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '江西省', 'court_area_value': '909364'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '山东省', 'court_area_value': '2791998'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '河南省', 'court_area_value': '3133098'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '湖北省', 'court_area_value': '1439215'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '湖南省', 'court_area_value': '1507354'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '广东省', 'court_area_value': '2242240'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '广西壮族自治区', 'court_area_value': '814142'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '海南省', 'court_area_value': '98945'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '重庆市', 'court_area_value': '1545678'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '四川省', 'court_area_value': '2088681'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '贵州省', 'court_area_value': '486067'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '云南省', 'court_area_value': '627794'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '西藏自治区', 'court_area_value': '24914'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '陕西省', 'court_area_value': '1232277'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '甘肃省', 'court_area_value': '550354'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '青海省', 'court_area_value': '168552'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '宁夏回族自治区', 'court_area_value': '334156'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2, 'court_area': '新疆维吾尔自治区', 'court_area_value': '353949'}
+2019-03-30 22:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 2,
+ 'court_area': '新疆维吾尔自治区高级人民法院生产建设兵团分院',
+ 'court_area_value': '64211'}
+2019-03-30 22:16:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/TreeContent> (referer: None)
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '最高人民法院', 'court_area_value': '0'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '北京市', 'court_area_value': '101237'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '天津市', 'court_area_value': '31702'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '河北省', 'court_area_value': '111028'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '山西省', 'court_area_value': '26624'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '内蒙古自治区', 'court_area_value': '22003'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '辽宁省', 'court_area_value': '60156'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '辽宁省沈阳市中级人民法院', 'court_area_value': '1'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '吉林省', 'court_area_value': '52774'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '黑龙江省', 'court_area_value': '28036'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '上海市', 'court_area_value': '29609'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '江苏省', 'court_area_value': '125482'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '浙江省', 'court_area_value': '165068'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '安徽省', 'court_area_value': '71120'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '福建省', 'court_area_value': '107651'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '江西省', 'court_area_value': '35122'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '山东省', 'court_area_value': '134385'}
+2019-03-30 22:16:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '河南省', 'court_area_value': '205006'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '湖北省', 'court_area_value': '91413'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '湖南省', 'court_area_value': '118818'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '广东省', 'court_area_value': '119042'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '广西壮族自治区', 'court_area_value': '33242'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '海南省', 'court_area_value': '12183'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '重庆市', 'court_area_value': '67677'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '四川省', 'court_area_value': '69527'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '贵州省', 'court_area_value': '34471'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '云南省', 'court_area_value': '15302'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '西藏自治区', 'court_area_value': '324'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '陕西省', 'court_area_value': '45380'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '甘肃省', 'court_area_value': '18312'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '青海省', 'court_area_value': '4002'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '宁夏回族自治区', 'court_area_value': '9790'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3, 'court_area': '新疆维吾尔自治区', 'court_area_value': '9086'}
+2019-03-30 22:16:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 3,
+ 'court_area': '新疆维吾尔自治区高级人民法院生产建设兵团分院',
+ 'court_area_value': '1210'}
+2019-03-30 22:16:28 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/TreeContent> (referer: None)
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '最高人民法院', 'court_area_value': '0'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '北京市', 'court_area_value': '3040'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '天津市', 'court_area_value': '1475'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '河北省', 'court_area_value': '1297'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '山西省', 'court_area_value': '866'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '内蒙古自治区', 'court_area_value': '569'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '辽宁省', 'court_area_value': '2557'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '吉林省', 'court_area_value': '2132'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '黑龙江省', 'court_area_value': '1096'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '上海市', 'court_area_value': '1130'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '江苏省', 'court_area_value': '3177'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '浙江省', 'court_area_value': '2887'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '安徽省', 'court_area_value': '3571'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '福建省', 'court_area_value': '2199'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '江西省', 'court_area_value': '507'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '山东省', 'court_area_value': '1797'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '河南省', 'court_area_value': '4914'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '湖北省', 'court_area_value': '1144'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '湖南省', 'court_area_value': '2516'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '广东省', 'court_area_value': '1350'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '广西壮族自治区', 'court_area_value': '439'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '海南省', 'court_area_value': '853'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '重庆市', 'court_area_value': '3401'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '四川省', 'court_area_value': '3786'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '贵州省', 'court_area_value': '2927'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '云南省', 'court_area_value': '553'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '西藏自治区', 'court_area_value': '12'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '陕西省', 'court_area_value': '1790'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '甘肃省', 'court_area_value': '611'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '青海省', 'court_area_value': '193'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '宁夏回族自治区', 'court_area_value': '306'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4, 'court_area': '新疆维吾尔自治区', 'court_area_value': '583'}
+2019-03-30 22:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 4,
+ 'court_area': '新疆维吾尔自治区高级人民法院生产建设兵团分院',
+ 'court_area_value': '122'}
+2019-03-30 22:16:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/TreeContent> (referer: None)
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '最高人民法院', 'court_area_value': '0'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '北京市', 'court_area_value': '203459'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '天津市', 'court_area_value': '188718'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '河北省', 'court_area_value': '498395'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '山西省', 'court_area_value': '235286'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '内蒙古自治区', 'court_area_value': '321964'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '辽宁省', 'court_area_value': '404668'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '吉林省', 'court_area_value': '492555'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '黑龙江省', 'court_area_value': '457310'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '上海市', 'court_area_value': '100121'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '江苏省', 'court_area_value': '964430'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '浙江省', 'court_area_value': '1267045'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '安徽省', 'court_area_value': '837324'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '福建省', 'court_area_value': '599345'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '江西省', 'court_area_value': '310850'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '山东省', 'court_area_value': '1285563'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '河南省', 'court_area_value': '822460'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '湖北省', 'court_area_value': '541798'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '湖南省', 'court_area_value': '721648'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '广东省', 'court_area_value': '709779'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '广西壮族自治区', 'court_area_value': '415311'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '海南省', 'court_area_value': '55866'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '重庆市', 'court_area_value': '151836'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '四川省', 'court_area_value': '981791'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '贵州省', 'court_area_value': '127461'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '云南省', 'court_area_value': '214040'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '西藏自治区', 'court_area_value': '8618'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '陕西省', 'court_area_value': '537409'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '甘肃省', 'court_area_value': '145439'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '青海省', 'court_area_value': '53145'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '宁夏回族自治区', 'court_area_value': '107201'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5, 'court_area': '新疆维吾尔自治区', 'court_area_value': '78700'}
+2019-03-30 22:16:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/TreeContent>
+{'case_type_id': 5,
+ 'court_area': '新疆维吾尔自治区高级人民法院生产建设兵团分院',
+ 'court_area_value': '16518'}
+2019-03-30 22:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/CourtTreeContent> (referer: http://wenshu.court.gov.cn/List/TreeContent)
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第一师中级人民法院',
+ 'court_name_value': '11171'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第二师中级人民法院',
+ 'court_name_value': '1817'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第三师中级人民法院',
+ 'court_name_value': '7350'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第四师中级人民法院',
+ 'court_name_value': '275'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第五师中级人民法院',
+ 'court_name_value': '198'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第六师中级人民法院',
+ 'court_name_value': '4185'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第七师中级人民法院',
+ 'court_name_value': '2159'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第八师中级人民法院',
+ 'court_name_value': '6081'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第九师中级人民法院',
+ 'court_name_value': '138'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第十师中级人民法院',
+ 'court_name_value': '242'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第十二师中级人民法院',
+ 'court_name_value': '862'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第十三师中级人民法院',
+ 'court_name_value': '200'}
+2019-03-30 22:16:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆生产建设兵团第十四师中级人民法院',
+ 'court_name_value': '115'}
+2019-03-30 22:16:48 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/CourtTreeContent> (referer: http://wenshu.court.gov.cn/List/TreeContent)
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区乌鲁木齐市中级人民法院',
+ 'court_name_value': '26180'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区克拉玛依市中级人民法院',
+ 'court_name_value': '1279'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区吐鲁番市中级人民法院',
+ 'court_name_value': '1275'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区哈密市中级人民法院',
+ 'court_name_value': '1254'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区昌吉回族自治州中级人民法院',
+ 'court_name_value': '6998'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区博尔塔拉蒙古自治州中级人民法院',
+ 'court_name_value': '912'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区巴音郭楞蒙古自治州中级人民法院',
+ 'court_name_value': '4514'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区阿克苏地区中级人民法院',
+ 'court_name_value': '3491'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区克孜勒苏柯尔克孜自治州中级人民法院',
+ 'court_name_value': '120'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区喀什地区中级人民法院',
+ 'court_name_value': '1131'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区和田地区中级人民法院',
+ 'court_name_value': '1865'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区高级人民法院伊犁哈萨克自治州分院',
+ 'court_name_value': '5025'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区伊犁哈萨克自治州塔城地区中级人民法院',
+ 'court_name_value': '3079'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '新疆维吾尔自治区伊犁哈萨克自治州阿勒泰地区中级人民法院',
+ 'court_name_value': '1042'}
+2019-03-30 22:16:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '乌鲁木齐铁路运输中级法院',
+ 'court_name_value': '249'}
+2019-03-30 22:16:53 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/CourtTreeContent> (referer: http://wenshu.court.gov.cn/List/TreeContent)
+2019-03-30 22:16:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '宁夏回族自治区银川市中级人民法院',
+ 'court_name_value': '18028'}
+2019-03-30 22:16:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '宁夏回族自治区石嘴山市中级人民法院',
+ 'court_name_value': '8285'}
+2019-03-30 22:16:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '宁夏回族自治区吴忠市中级人民法院',
+ 'court_name_value': '8765'}
+2019-03-30 22:16:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '宁夏回族自治区固原市中级人民法院',
+ 'court_name_value': '5539'}
+2019-03-30 22:16:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '宁夏回族自治区中卫市中级人民法院',
+ 'court_name_value': '3068'}
+2019-03-30 22:16:59 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://wenshu.court.gov.cn/List/CourtTreeContent> (referer: http://wenshu.court.gov.cn/List/TreeContent)
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省西宁市中级人民法院',
+ 'court_name_value': '28854'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省海东市中级人民法院',
+ 'court_name_value': '3228'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省海北藏族自治州中级人民法院',
+ 'court_name_value': '2286'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省黄南藏族自治州中级人民法院',
+ 'court_name_value': '551'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省海南藏族自治州中级人民法院',
+ 'court_name_value': '1173'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省果洛藏族自治州中级人民法院',
+ 'court_name_value': '459'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省玉树藏族自治州中级人民法院',
+ 'court_name_value': '451'}
+2019-03-30 22:17:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://wenshu.court.gov.cn/List/CourtTreeContent>
+{'case_type_id': 1,
+ 'court_level_id': 3,
+ 'court_name': '青海省海西蒙古族藏族自治州中级人民法院',
+ 'court_name_value': '4876'}
